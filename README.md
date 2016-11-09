@@ -89,7 +89,7 @@ We saw that we could create a new user with all empty attributes. Not good!
 
 We added validations as per the docs:
 
-http://guides.rubyonrails.org/active_record_validations.html
+<http://guides.rubyonrails.org/active_record_validations.html>
 
 We also saw what happens when validation fails.
 
@@ -103,14 +103,16 @@ We can iterate over `cat.errors` (containing records of each error, including wh
 
 ActiveRecord callbacks are about running code before and/or after certain events. We can register callbacks around validation, save, initial creation, deletion, etc...
 
-- http://guides.rubyonrails.org/active_record_callbacks.html
-- http://guides.rubyonrails.org/active_record_callbacks.html#available-callbacks
+- <http://guides.rubyonrails.org/active_record_callbacks.html>
+- <http://guides.rubyonrails.org/active_record_callbacks.html#available-callbacks>
 
 We added a callback to create a new Message when a new Cat is registered.
 
 We talked about how we could delete all messages for a Cat when the Cat deletes their account, using an `after_delete` callback... but there's a better way.
 
 ## `dependent: :destroy`
+
+<http://guides.rubyonrails.org/association_basics.html#dependent>
 
 On the association, on the "has many" side, we can add an option:
 
@@ -124,6 +126,8 @@ end
 ```
 
 This means, when a cat is deleted, delete (destroy) any associated messages.
+
+(Under the hood, ActiveRecord does implement this as a "after_delete" callback.)
 
 
 ## Testing it out
