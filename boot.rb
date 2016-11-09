@@ -7,7 +7,7 @@ require 'active_record'
 
 
 # Output messages from Active Record to standard out
-ActiveRecord::Base.logger = Logger.new(STDOUT)
+# ActiveRecord::Base.logger = Logger.new(STDOUT)
 
 print 'Establishing connection to database ...'
 
