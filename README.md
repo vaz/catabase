@@ -1,7 +1,9 @@
-# Moar ActiveRecord!
+# ActiveRecord! Cats!
+
+This is a little toy app made for a lecture on ActiveRecord for Lighthouse Labs.
 
 - Live coding example!
-- Validating crappy input!
+- Validating bad input!
 - Callbacks (that look completely different from what you think of as callbacks)!
 - Probably about cats!
 
@@ -11,7 +13,7 @@ It's like the Employees/Stores setup, mostly.
 
 ## Plan the app: the Catabase
 
-It could be a command-line app. But maybe let's not really
+It can be a command-line app. But maybe let's not really
 deal with ARGV or `while(true)` or any of that, and interact
 with it from pry instead.
 
@@ -182,3 +184,7 @@ Deleted.
 ```
 
 ![idunno](https://github.com/vaz/catabase/blob/master/.resources/hero.gif?raw=true)
+
+## Credits
+
+Material for lecture by Vaz Allen at Lighthouse Labs, Nov 2016
